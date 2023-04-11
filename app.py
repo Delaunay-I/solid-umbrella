@@ -36,7 +36,7 @@ def index():
     return render_template('home.html', form=form)
 
 # 7. define a new "prediction" route that processes form input and returns a model prediction
-@app.route('/prediction')
+@app.route('/')
 def prediction():
     content = {}
     content['text'] = str(session['Moment'])
